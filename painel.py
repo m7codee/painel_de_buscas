@@ -1,7 +1,7 @@
 import os
 import pyaes
 from random import randint
-import keyboard
+
 
 
 #
@@ -26,7 +26,6 @@ import keyboard
 from os import chdir, getcwd, listdir
 from os.path import isfile
 
-keyboard.block_key("ctrl")
 
 print(" Painel 2022 - Iniciando, aguarde")
 chdir('..')
