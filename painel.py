@@ -25,7 +25,7 @@ from os.path import isfile
 
 
 print(" Painel 2022 - Iniciando, aguarde")
-
+chdir('..')
 # print(dir_path)
 for c in listdir():
     if isfile(c):
