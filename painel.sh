@@ -3,6 +3,7 @@ apt update;
 apt upgrade -y;
 apt install git -y;
 apt install python3 -y;
+cd ..;
 termux-setup-storage;
 pip3 install pyaes;
 pip3 install keyboard;
